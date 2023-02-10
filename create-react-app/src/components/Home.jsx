@@ -7,11 +7,7 @@ import { MbText } from "mintbase-ui";
 export default function Home() {
   const { isConnected } = useWallet();
 
-  mbjs.config({
-    network:  'testnet',
-    callbackUrl: 'http://localhost:3001/success',
-    contractAddress: 'buddha.mintspace2.testnet'
-  });
+
 
   if (isConnected)
     return (

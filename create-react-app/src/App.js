@@ -7,9 +7,25 @@ import '@near-wallet-selector/modal-ui/styles.css';
 import { Buffer } from "buffer"
 import { RouterProvider } from 'react-router-dom';
 import router from './config/router';
+import { mbjs } from '@mintbase-js/sdk';
 
 function App() {
   global.Buffer = Buffer;
+
+  const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development'
+
+  let callbackUrl = ''
+
+  if (typeof window !== 'undefined') {
+    callbackUrl = isDev ? `http://${window?.location.host}/success` : `https://${window?.location.host}/success`
+  }
+
+  mbjs.config({
+    network: 'testnet',
+    callbackUrl: callbackUrl,
+    contractAddress: 'buddha.mintspace2.testnet'
+  });
+
 
   return (
     <WalletContextProvider>

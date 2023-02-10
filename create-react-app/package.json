@@ -40,9 +40,10 @@
     ]
   },
   "devDependencies": {
-    "@mintbase-js/react": "^0.1.0-alpha-20",
-    "@mintbase-js/sdk": "^0.1.0-alpha-20",
-    "@mintbase-js/storage": "^0.1.0-alpha-20",
+    "@mintbase-js/data": "^0.1.0-beta.2",
+    "@mintbase-js/react": "^0.1.0-beta.2",
+    "@mintbase-js/sdk": "^0.1.0-beta.2",
+    "@mintbase-js/storage": "^0.1.0-beta.2",
     "buffer": "^6.0.3",
     "mintbase-ui": "^0.9.21",
     "react-hook-form": "^7.43.1",
