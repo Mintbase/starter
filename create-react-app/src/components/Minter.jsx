@@ -7,10 +7,11 @@ import { FormProvider, useForm } from "react-hook-form";
 
 import { DESCRIPTION, MAIN_IMAGE, TITLE } from "../config/constants";
 import MintForm from "./MintForm";
+import { Connect } from "./Connect";
 
 
 export default function Minter() {
-  const { selector, activeAccountId } = useWallet();
+  const { selector, activeAccountId , isConnected} = useWallet();
 
   const methods = useForm({
     defaultValues: {
@@ -34,7 +35,7 @@ export default function Minter() {
     await handleMint(reference, activeAccountId, wallet);
   };
 
-  return (
+  return isConnected ? (
     <div className="md:max-w-2xl w-full space-y-4">
       <div className="flex flex-col items-center justify-center mt-2">
         <MbText className="text-3xl">Mint your NFTs</MbText>
@@ -54,7 +55,7 @@ export default function Minter() {
         </div>
       </div>
     </div>
-  );
+  ): <Connect/>;
 }
 
 async function handleUpload(file, data) {
