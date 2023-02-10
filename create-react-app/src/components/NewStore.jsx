@@ -3,6 +3,7 @@ import { useWallet } from '@mintbase-js/react';
 import { FormProvider, useForm } from 'react-hook-form'
 import { EInputType } from '../config/constants';
 import { Connect } from './Connect';
+import { NearWalletConnector } from './NearWalletSelector';
 import { StoreForm } from './StoreForm';
 
 
