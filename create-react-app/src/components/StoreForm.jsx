@@ -22,8 +22,6 @@ export const StoreForm = () => {
     register,
     watch,
     setValue,
-    setError,
-    clearErrors,
     getValues,
     trigger,
     formState: { errors },
@@ -38,22 +36,17 @@ export const StoreForm = () => {
 
   const checkNameExists = async (v) => {
     const res = await checkStoreName(v)
-     return res?.nft_contracts.length === 0
+    return res?.data?.nft_contracts?.length === 0
   }
 
 
   const { selector, activeAccountId } = useWallet()
 
-  
+
   const onSubmit = async () => {
-
-
-
     const name = getValues(EInputType.NAME)
     const symbol = getValues(EInputType.SYMBOL)
 
- 
-    console.log(name, 'name')
 
     const wallet = await selector.wallet()
 
@@ -166,7 +159,7 @@ export const StoreForm = () => {
         label="Deploy Store"
         state={hasErrors || !hasValues ? EState.DISABLED : EState.ACTIVE}
         disabled={hasErrors ? true : hasValues ? false : true}
-       onClick={onSubmit}
+        onClick={onSubmit}
       />
     </div>
   </div>)
