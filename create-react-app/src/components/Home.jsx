@@ -1,5 +1,4 @@
 import { useWallet } from "@mintbase-js/react";
-import { NearWalletConnector } from "../components/NearWalletSelector";
 import { MbButtonLink } from "mintbase-ui";
 import { Connect } from "./Connect";
 
@@ -16,9 +15,6 @@ export default function Home() {
             <MbButtonLink text="Store Deploy" href="/new-store"></MbButtonLink>
           </div>
         </div>
-      </div>
-      <div className="absolute flex align-left right-10 bottom-10">
-        <NearWalletConnector />
       </div>
       </>
     );
