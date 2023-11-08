@@ -1,40 +1,81 @@
+
 # Mintbase Starter
-starter kits with different front-end technologies
 
-
-### live:
-
-<p>
-  <a href="https://mb-starter-create-react-app.vercel.app/">
-    <img src="https://miro.medium.com/max/464/1*LxtdsVO0UnRDlrale42riQ.png" style="width:30px">
-    <span> create-react-app </span>
-  </a>
-</p>
+This is a simple-login project that uses [@mintbase-js/react](https://github.com/Mintbase/mintbase-js/tree/beta/packages/react) as Provider to showcase Mintbase Wallet usage.
+It uses Next.js 14.
 
 
 
-## Troubleshooting
+## Getting Started
+First run install 
+```bash
 
-### Buffer issue:
+npm  install
 
-Due to near-api-js uses buffer and util packages, some webpack or vite projects, cant load and build due to that but theres some workarounds for that:<br/>
-[Buffer is not defined](https://stackoverflow.com/questions/70714690/buffer-is-not-defined-in-react-vite)<br/>
-[Vite Global isnt defined](https://stackoverflow.com/questions/72114775/vite-global-is-not-defined)<br/>
-https://github.com/near/near-api-js/issues/757<br/>
+# or
+yarn
 
+# or
 
-### util:
+pnpm install
 
-need to do a ```npm install --save-dev util```
+```
 
-## Current Support / Roadmap
-| stack            | Features                            | TypeScript       | mb-ui version | mbjs version    | version |
-|------------------|-------------------------------------|------------------|---------------|-----------------|---------|
-| create-react-app | Minting, Deploy Store | soon             | 0.9.21        | 0.1.0-beta.2    | 5.0.1   |
-| vite             | in progress                         | soon             | --            | --              | --      |
-| Next.js          | Simple MarketPlace, Simple Minter   | Yes, Only no JSX | 0.9.16        | v0.1.0-alpha-20 | 13.1.1  |
+  
 
+Second, run the development server:
 
-## Next.js examples
+```bash
 
-for Next.js examples please visit our [examples repository](https://github.com/Mintbase/examples)
+npm  run  dev
+
+# or
+yarn  dev
+
+# or
+
+pnpm  dev
+
+```
+
+  
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+  
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+  
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+  
+
+## Learn More
+
+  
+
+To learn more about Next.js, take a look at the following resources:
+
+  
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+  
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+  
+
+## Deploy on Vercel
+
+  
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+  
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
