@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Mintbase Starter with Next.js",
-  description: "Simple Minter with Next.js 14",
+  description: "Simple Login with Next.js 14",
 };
 
 export default function Home() {
