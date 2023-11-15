@@ -4,7 +4,6 @@ export const NearWalletConnector = () => {
   const { isConnected, selector, connect , activeAccountId } = useMbWallet();
 
 
-
   const handleSignout = async () => {
     const wallet = await selector.wallet();
     return wallet.signOut();
