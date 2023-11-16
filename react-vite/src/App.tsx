@@ -1,7 +1,7 @@
 import { MintbaseWalletContextProvider } from "@mintbase-js/react";
 import "./App.css";
 import { NearWalletConnector } from "./NearWalletConnector";
- import { Buffer } from 'buffer';
+import { Buffer } from 'buffer';
 
 function App() {
   
