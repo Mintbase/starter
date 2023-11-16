@@ -9,7 +9,4 @@ export default defineConfig({
     global: "globalThis",
     'process.env': {}
   },
-  build: {
-    commonjsOptions: { include: [] },
-  },
 })
