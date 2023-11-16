@@ -1,11 +1,12 @@
 import { MintbaseWalletContextProvider } from "@mintbase-js/react";
 import "./App.css";
 import { NearWalletConnector } from "./NearWalletConnector";
-import { Buffer } from "buffer";
+ import { Buffer } from 'buffer';
 
 function App() {
-  global.Buffer = Buffer;
   
+ window.Buffer = Buffer
+
   const MintbaseWalletSetup = {
     contractAddress: "hellovirtualworld.mintspace2.testnet",
     network: "testnet",
