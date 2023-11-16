@@ -7,7 +7,6 @@ import "../styles.css";
 
 
 import { MintbaseWalletContextProvider } from "@mintbase-js/react";
-import { NearWalletConnector } from "@/components/NearWalletSelector";
 
 const inter = Inter({ subsets: ["latin"] });
 
