@@ -1,7 +1,5 @@
-import * as process from "process";
 import { Buffer } from "buffer";
-Object.assign(self, {
-  process,
+Object.assign(self, { 
   global: self,
   Buffer,
 });
