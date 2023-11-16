@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@mintbase-js/react':
-    specifier: v0.5.0-beta.4
-    version: 0.5.0-beta.4(borsh@0.7.0)(near-api-js@2.1.4)
+    specifier: 0.5.0-beta.5
+    version: 0.5.0-beta.5(borsh@0.7.0)(near-api-js@2.1.4)
   next:
     specifier: 14.0.1
     version: 14.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -177,10 +177,10 @@ packages:
       query-string: 7.1.3
     dev: false
 
-  /@mintbase-js/react@0.5.0-beta.4(borsh@0.7.0)(near-api-js@2.1.4):
-    resolution: {integrity: sha512-wdaN4iJNxZwlwO7kynD43M0MHeyX6afuyK8nCpZ41q4s+ysSSytpih+ucdfIreQpVs+Edi3sTAoJhvwaShEg2w==}
+  /@mintbase-js/react@0.5.0-beta.5(borsh@0.7.0)(near-api-js@2.1.4):
+    resolution: {integrity: sha512-+Lrm9BacW9dLNnybcHs0XCBp3nddlCinR/BN5E+MMrC6j4RYaLk1qn+Sq2pageQ/tDlJd4rqr9egq8q6g4hCQQ==}
     dependencies:
-      '@mintbase-js/wallet': 0.5.0-fixes-wallet-selector-101ffee.0
+      '@mintbase-js/wallet': 0.5.0-beta.4
       '@near-wallet-selector/core': 8.7.2(near-api-js@2.1.4)
       '@near-wallet-selector/here-wallet': 8.7.2(borsh@0.7.0)(near-api-js@2.1.4)
       '@near-wallet-selector/meteor-wallet': 8.7.2(near-api-js@2.1.4)
@@ -195,8 +195,8 @@ packages:
       - near-api-js
     dev: false
 
-  /@mintbase-js/wallet@0.5.0-fixes-wallet-selector-101ffee.0:
-    resolution: {integrity: sha512-pHkZ9iTZ7dW4nocmshUHx3cyzXHLjvZzW8ZXNW78ixtuksjJxWB4tQPIhHxycAPXFPKrwXYuuN35U8BIC8ZKBQ==}
+  /@mintbase-js/wallet@0.5.0-beta.4:
+    resolution: {integrity: sha512-rYKd8ZOeLw+qdgT+QGN6qKdhPgl03EZ1gYdGs97aQ2BufsCTAiejBQN5AdHKMH7XLOAefvEsk+BqtoYK7JKQ9w==}
     dependencies:
       '@near-wallet-selector/core': 8.7.2(near-api-js@2.1.4)
       bn.js: 5.2.1
